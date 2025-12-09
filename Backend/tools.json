@@ -1,0 +1,30 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "get_clinical_trials",
+      "description": "Get active clinical trials for a specific molecule.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "molecule_name": { "type": "string" }
+        },
+        "required": ["molecule_name"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_market_data",
+      "description": "Get market size and competitors for a disease.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "indication": { "type": "string" }
+        },
+        "required": ["indication"]
+      }
+    }
+  }
+]
